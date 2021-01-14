@@ -7,7 +7,6 @@ import '@tensorflow/tfjs-backend-webgl';
 import '@tensorflow/tfjs-backend-cpu';
 
 async function loadBackend() {
-    await tf.setBackend('rn-webgl');
     await tf.ready();
     return tf.getBackend();
 }
