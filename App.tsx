@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import '@tensorflow/tfjs-react-native';
 import * as tf from '@tensorflow/tfjs-core';
-import '@tensorflow/tfjs-backend-webgl';
-import '@tensorflow/tfjs-backend-cpu';
 
 async function loadBackend() {
     await tf.ready();
